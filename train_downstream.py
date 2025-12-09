@@ -18,12 +18,6 @@ random.seed(2016)
 np.random.seed(2016) 
 tf.random.set_seed(2016)
 
-'''
-In dataset RML2016.10a, for each modulation type each snr, there are 1000 samples.
-We use radnomly select 800 samples as training data (unlabled), 100 as testing, and 100 as validation.
-As lableded dataset, in this experiment, we use ratio_train_labeled = 0.01 as training set
-and ratio_val_labeled = 0.01 as validation set.
-'''
 ######################################################################################################
  # 加载数据集
 n_classes = len(get_classes(from_file="./data/classes_rml25_9.txt"))
